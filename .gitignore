@@ -217,6 +217,24 @@ flink-*/
 logs/
 checkpoints/
 savepoints/
+tmp/
+
+# Local Docker / env (machine-specific; keep docker-compose.yml in git)
+docker-compose.override.yml
+.env.local
+.env.*.local
+
+# JVM crash dumps (Flink / PyFlink client on host)
+hs_err_pid*.log
+replay_pid*.log
+
+# JetBrains
+.idea/
+
+# Vim / Emacs swap files
+*.swp
+*.swo
+*~
 
 # macOS
 .DS_Store
